@@ -4,5 +4,59 @@
 //LET : SE PUEDEN CAMBIAR SU VALOR ES UNA PALABRA RESERVADA (SE DECLARA PONIENDOLE UN NOMBRE ej: let nombresignificativo; QUE SOLO PUEDE ESTAR FORMADO POR LETRAS, NUMEROS Y LOS SIGNOS $ Y _ PERO NO PUEDE EMPEZAR CON UN NUERO NI DEBE CONTENER Ñ Y DIFERENCIA ENTRE MIN Y MAY) 
 let ejemplo = "mivariable";
 let miApodo = "me";
-
 //CONST: NO PUEDE CAMBIAR SU VALOR 
+
+//TIPO DE DATOS:
+//NUMERICO: NUMBER
+let edad = 32; //numero entero
+let precio = 168.30; //decimales
+let malaDivicion = "35" / 2; //NaN - Not a number, no es un numero aunque es un valor "tipo" number
+//CADENAS DE CARACTERES: STRING
+let nombre = 'Melisa'; //comillas separadas
+let ocupacion = "encargada" //comillas dobles
+//tiene el mismo resultado ambas '' y "" 
+//LOGICOS O BOOLEANOS: (BOOLEAN)
+let laCharlaEstaCopada = true;
+let hoyAsadoAlfinal = false;
+//UNDEFINED (VALOR SIN DEFINIR) INDICA LA AUSENCIA DE VALOR LAS VARIABLES TIENE UN TIPO DE CALOR INDEFINIDO HASTA QUE LE ASIGNAMOS UNO
+let saludo; //undefined, no tiene valor
+saludo = "hola!"; //ahora si tiene un valor
+//NULL: (VALOR NULO) LO ASIGNAMOS NOSOTROS PARA INDICAR UN VALOR VACIO O DESCONOCIDO
+let temperatura = null //no llego un dato, algo fallo
+//NaN (Not-A-Number) es global, indica que el valor pasado no es un numero
+let name = "Esteban";
+console.log("Esteban"-1);
+
+//OPERADORES:
+
+//DE ASIGNACION: ASIGNAN EL VALOR DE LA DERECHA EN LA VARIABLE DE LA IZQUIERDA
+let age = 35; //asigna el numero 35 a edad
+//ARITMETICOS: NOS PERMITEN HACER OPERACIONES MATEMATICAS, DEVUELVEN EL RESULTADO DE LA OPERACION
+10 + 15 //SUMA: 25
+10 - 15 //RESTA: -5
+18 * 15 //MUKTIPLICACION: 158
+15 / 18 //DIVICION: 1.5
+15++ //INCREMENTO +1
+15-- //DECREMENTO -1
+//% : OPERADOR MODULO NOS DEVUELVE EL RESTO DE UNA DIVICION 15/5 EL RESTO ES 0 15/2 EL RESTO ES 1
+//DE CONCATENACION: SIRVEN PARA UNIR CADENAS DE TEXTO. DEVUELVEN OTRA CADENA DE TEXTO
+let Nombre = "Melisa";
+let apellido = "Ferrua";
+let nombreCompleto = "me llamo " + Nombre + " " + apellido;
+// se puede concatenar con backsticks ('') 
+//DE COMPARACION SIMPLE: COMPARAN DOS VALORES, DEVULEVEN VERDADERO O FALSO
+10 == 15 //IGUALDAD: FALSE
+10 != 15 //DESIGUAL: TRUE
+//DE COMPARACION ESTRICTA: COMPARAN EL CALOR Y EL TIPO DE DATO TMB
+10 === "10" //IGUALDAD ESTRICTA: FALSE PORQUE EL "10" ES TEXTO.
+10 !== 15 //DESIGUALDAD ESTRICTA: TRUE PORQUE SON DISTINTOS NUMEROS PERO SON NUMBER
+
+//OPERADORES LOGICOS PERMITEN COMBINAR VALORES BOOLEANOS EXITEN TRES OPERADORES AND, OR Y NOT
+// AND (&&) TODOS LOS VALORES DEBEN SER COMO TRUE PARA QUE EL RESULTADO SEA TRUE
+(10 > 15) && (10 != 20) //false (FALSE) && (TRUE) : FALSE
+(12 % 4 == 0) && (12!= 24) //TRUE (TRUE) && (TRUE) : TRUE
+// OR (||) AL MENOS UN VSLOR DEBE EVALUAR COMO TRUE PARA QUE EL RESULTADO SEA TRUE
+// NOT (!) NIEGA LA CONDICION, SI ERA TRUE, SERA FALSE Y VISEVERSA
+
+
+
